@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Edoardo Filippucci" />
+    <title>Web Designer | Edo</title>
+    <link rel="stylesheet" href="./languages/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script defer src="./languages/javascript/animation-on-scroll.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>Edo<span class="colored-text"> .</span></h1>
+      </div>
+      <div id="toggleMenu"></div>
+      <nav class="main-nav" id="sidebar">
+        <ul id="menu-responsive-animation">
+          <li>
+            <a href="#home" class="active">Home</a>
+          </li>
+          <li>
+            <a href="#clients" class="nav-link">Clienti</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Servizi</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Contatti</a>
+          </li>
+          <!-- <li>
+            <a href="#" id="cliccabile" class="nav-link">EN</a>
+          </li> -->
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <div class="home-container">
+        <div class="home-box home-text-container">
+          <h1 class="home-type-work-text">Frontend Dev</h1>
+          <br />
+          <p data-translate="presentation" class="home-presentation-text">
+            👋 Ciao, Sono
+            <span class="bolded-text home-text-change-color">Edoardo</span>,
+            Freelancer
+          </p>
+          <br />
+          <p class="home-explain-text bolded-text">
+            Potenzio i Brand attraverso Siti Web Custom, ad Alta Conversione
+          </p>
+          <br />
+          <div class="home-button-text">
+            <a href="#" class="bolded-text" id="home-button-1">
+              Chiedi un Preventivo Gratuito
+            </a>
+            <a href="#" class="bolded-text" id="home-button-2">
+              Guarda i Progetti dei Clienti
+            </a>
+          </div>
+        </div>
+        <div class="home-box home-image-container">
+          <img
+            class="home-personal-image"
+            src="./assets/images/home-image.jpg"
+            alt=""
+          />
+          <div id="home-img-design-element"></div>
+        </div>
+      </div>
+    </section>
+    <section id="clients">
+      <div class="clients-container">
+        <div class="clients-box clients-explain-text">
+          <h1>I Miei Clienti</h1>
+          <p>
+            Ho lavorato con molti Ottimi Clienti, ma ecco qui alcuni dei
+            <span class="bolded-text home-text-change-color"
+              >Lavori Migliori</span
+            >.
+          </p>
+          <img src="./assets/images/clients-explain.svg" alt="" /><br />
+          <p>
+            Ogni sito è fatto da
+            <span class="bolded-text">Zero</span> utilizzando i seguenti
+            linguaggi: <span class="bolded-text">Html</span>,
+            <span class="bolded-text">Css</span>,
+            <span class="bolded-text">Javascript</span>.
+          </p>
+        </div>
+        <div class="clients-box clients-projects">
+          <!-- PROVA -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-custom-container">
+                  <div class="swiper-custom-image-container">
+                    <img src="./assets/images/test.webp" alt="" />
+                  </div>
+                  <div class="swiper-custom-text-container">
+                    <h1>Titolo 1</h1>
+                    <p>Piccola descrizione del sito web</p>
+                    <a href="#">Vai al Sito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-custom-container">
+                  <div class="swiper-custom-image-container">
+                    <img src="./assets/images/test.webp" alt="" />
+                  </div>
+                  <div class="swiper-custom-text-container">
+                    <h1>Titolo 2</h1>
+                    <p>Piccola descrizione del sito web</p>
+                    <a href="#">Vai al Sito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-custom-container">
+                  <div class="swiper-custom-image-container">
+                    <img src="./assets/images/test.webp" alt="" />
+                  </div>
+                  <div class="swiper-custom-text-container">
+                    <h1>Titolo 3</h1>
+                    <p>Piccola descrizione del sito web</p>
+                    <a href="#">Vai al Sito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-custom-container">
+                  <div class="swiper-custom-image-container">
+                    <img src="./assets/images/test.webp" alt="" />
+                  </div>
+                  <div class="swiper-custom-text-container">
+                    <h1>Titolo 4</h1>
+                    <p>Piccola descrizione del sito web</p>
+                    <a href="#">Vai al Sito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-custom-container">
+                  <div class="swiper-custom-image-container">
+                    <img src="./assets/images/test.webp" alt="" />
+                  </div>
+                  <div class="swiper-custom-text-container">
+                    <h1>Titolo 5</h1>
+                    <p>Piccola descrizione del sito web</p>
+                    <a href="#">Vai al Sito</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta-1">
+      <div class="cta-box1">
+        <div class="cta-box1-text">
+          <h1>Vuoi Ridisegnare il Tuo Sito Web?</h1>
+          <p>
+            Contattami in modo che io possa conoscere il tuo prodotto e possiamo
+            discutere il modo migliore per aiutarti a raggiungere i tuoi
+            obiettivi.
+          </p>
+          <a href="#" class="bolded-text">Contattami</a>
+        </div>
+        <div class="cta-box1-img">
+          <img src="./assets/images/cta-1.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- <section id="services">
+      <div class="service-container">
+        <h1 class="bolded-text">Servizi</h1>
+        <div class="service-box">
+          <div class="service-explain">
+            <div class="service-img-container">
+              <i class="bx bx-pen"></i>
+            </div>
+            <h1>UI Design</h1>
+          </div>
+        </div>
+        <div class="service-box"></div>
+      </div>
+    </section> -->
+
+    <script src="./languages/javascript/menu-responsive.js"></script>
+    <script src="./languages/javascript/drag&drop-block.js"></script>
+    <script src="./languages/javascript/rightclick-block.js"></script>
+    <script src="./languages/javascript/copy-block.js"></script>
+    <script src="./languages/javascript/offset-smooth-scroll.js"></script>
+    <!-- <script src="./languages/javascript/change-language.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
