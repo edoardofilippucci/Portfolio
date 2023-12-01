@@ -1165,6 +1165,7 @@ section#cta-2 {
     width: 90%;
     height: auto !important;
     margin-top: -50px;
+    background: transparent;
   }
 
   .cta-box2 {
