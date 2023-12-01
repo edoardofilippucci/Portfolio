@@ -19,6 +19,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script defer src="./languages/javascript/animation-on-scroll.js"></script>
   </head>
   <body>
@@ -36,7 +43,7 @@
             <a href="#clients" class="nav-link">Clienti</a>
           </li>
           <li>
-            <a href="#" class="nav-link">Servizi</a>
+            <a href="#services" class="nav-link">Servizi</a>
           </li>
           <li>
             <a href="#" class="nav-link">Contatti</a>
@@ -64,9 +71,9 @@
           <br />
           <div class="home-button-text">
             <a href="#" class="bolded-text" id="home-button-1">
-              Chiedi un Preventivo Gratuito
+              Contattami Gratuitamente
             </a>
-            <a href="#" class="bolded-text" id="home-button-2">
+            <a href="#clients" class="bolded-text" id="home-button-2">
               Guarda i Progetti dei Clienti
             </a>
           </div>
@@ -188,26 +195,71 @@
         </div>
       </div>
     </section>
-    <!-- <section id="services">
+    <section id="services">
       <div class="service-container">
-        <h1 class="bolded-text">Servizi</h1>
-        <div class="service-box">
-          <div class="service-explain">
-            <div class="service-img-container">
-              <i class="bx bx-pen"></i>
+        <h1 class="bolded-text service-title">Servizi</h1>
+        <div class="services-box">
+          <div class="service-box1">
+            <div class="service-elements element-1">
+              <div class="service-icon-container">
+                <i class="fa-solid fa-pen-nib"></i>
+              </div>
+              <h1 class="bolded-text">UI Design</h1>
             </div>
-            <h1>UI Design</h1>
+            <div class="service-elements element-2">
+              <div class="service-icon-container">
+                <i class="fa-solid fa-hand-pointer"></i>
+              </div>
+              <h1 class="bolded-text">UX Design</h1>
+            </div>
+          </div>
+          <div class="service-box2">
+            <div class="service-elements element-3">
+              <div class="service-icon-container">
+                <i class="fa-solid fa-paragraph"></i>
+              </div>
+              <h1 class="bolded-text">Content Writing</h1>
+            </div>
+            <div class="service-elements element-4">
+              <div class="service-icon-container">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h1 class="bolded-text">Web Development</h1>
+            </div>
           </div>
         </div>
-        <div class="service-box"></div>
       </div>
-    </section> -->
+    </section>
+    <div class="quotation-button-container">
+      <button class="bolded-text">Chiedi un Preventivo</button>
+    </div>
+    <section id="cta-2">
+      <div class="cta-box2">
+        <div class="cta-box2-text">
+          <h1>Da Dove Iniziamo?</h1>
+          <p>
+            Contattami in modo che io possa conoscere il tuo prodotto e possiamo
+            discutere il modo migliore per aiutarti a raggiungere i tuoi
+            obiettivi.
+          </p>
+          <a href="#" class="bolded-text">Contattami</a>
+        </div>
+        <div class="cta-box2-img">
+          <img src="./assets/images/cta-2.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <button id="scrollButton">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="./languages/javascript/menu-responsive.js"></script>
     <script src="./languages/javascript/drag&drop-block.js"></script>
     <script src="./languages/javascript/rightclick-block.js"></script>
     <script src="./languages/javascript/copy-block.js"></script>
     <script src="./languages/javascript/offset-smooth-scroll.js"></script>
+    <script src="./languages/javascript/to-top-button.js"></script>
     <!-- <script src="./languages/javascript/change-language.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
