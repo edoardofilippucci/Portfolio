@@ -913,6 +913,7 @@ section#faq {
 #faq h1 {
   font-size: 70px;
   color: var(--black-color);
+  margin-top: -50px;
 }
 
 .faq-box {
