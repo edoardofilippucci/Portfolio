@@ -46,7 +46,7 @@
             <a href="#services" class="nav-link">Servizi</a>
           </li>
           <li>
-            <a href="#" class="nav-link">Contatti</a>
+            <a href="#contact" class="nav-link">Contatti</a>
           </li>
           <!-- <li>
             <a href="#" id="cliccabile" class="nav-link">EN</a>
@@ -357,7 +357,7 @@
     </section>
     <section id="faq">
       <div class="faq-container">
-        <h1>FAQ's</h1>
+        <h1 class="faq-title">FAQ's</h1>
         <div class="faq-box">
           <div class="faq-question">
             <h3>Qual'è l'investimento iniziale per creare un sito web?</h3>
@@ -412,7 +412,7 @@
         </div>
       </div>
     </section>
-    <!-- <section id="contact">
+    <section id="contact">
       <div class="contact-container">
         <div class="contact-explain">
           <div class="contact-text">
@@ -423,9 +423,94 @@
             <img src="./assets/images/contact-img.svg" alt="" />
           </div>
         </div>
-        <div class="contact-form"></div>
+        <div class="contact-form">
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/meqnbqja"
+            method="post"
+          >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nome*"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email*"
+              autocomplete="off"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Messaggio*"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn">
+              Invia <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
       </div>
-    </section> -->
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-menu">
+          <div class="footer-img">
+            <img src="./assets/images/footer-logo.png" alt="" />
+            <h1 class="bolded-text no-select">Edo</h1>
+          </div>
+          <div class="footer-text">
+            <div class="footer-text-box footer-box1">
+              <div class="footer-box-title">
+                <h1 class="caps no-select bolded-text">Menu</h1>
+              </div>
+              <div class="footer-box-explain">
+                <a id="scrollLink" href="#home">Home</a>
+                <a href="#clients">Clienti</a>
+                <a href="#services">Servizi</a>
+                <a href="#contact">Contatti</a>
+              </div>
+            </div>
+            <div class="footer-text-box footer-box2">
+              <div class="footer-box-title">
+                <h1 class="caps no-select bolded-text">Info</h1>
+              </div>
+              <div class="footer-box-explain">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+              </div>
+            </div>
+            <div class="footer-text-box footer-box3">
+              <div class="footer-box-title">
+                <h1 class="caps no-select bolded-text">Contatti</h1>
+              </div>
+              <div class="footer-box-explain">
+                <!-- Inserire Email e Insta Agency -->
+                <p class="no-select">name@agency.com</p>
+                <a href="#"
+                  ><i class="footer-icon fa-brands fa-instagram"></i
+                ></a>
+                <a href="#"
+                  ><i class="footer-icon fa-brands fa-x-twitter"></i></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <h1 class="bolded-text no-select">
+            edopucci.it by Edoardo Filippucci | ©2023 - All Rights Reserved
+          </h1>
+        </div>
+      </div>
+    </footer>
 
     <button id="scrollButton">
       <i class="fa-solid fa-arrow-up"></i>
@@ -437,6 +522,7 @@
     <script src="./languages/javascript/copy-block.js"></script>
     <script src="./languages/javascript/offset-smooth-scroll.js"></script>
     <script src="./languages/javascript/to-top-button.js"></script>
+    <script src="./languages/javascript/to-top-text.js"></script>
     <script src="./languages/javascript/faq-section.js"></script>
     <!-- <script src="./languages/javascript/change-language.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -459,6 +545,25 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+
+    <!-- form -->
+    <script>
+      window.onbeforeunload = () => {
+        for (const form of document.getElementsByTagName("form")) {
+          form.reset();
+        }
+      };
+    </script>
+
+    <!-- no selected text -->
+    <script>
+      var elementi = document.getElementsByClassName("no-select");
+      for (var i = 0; i < elementi.length; i++) {
+        elementi[i].onselectstart = function () {
+          return false;
+        };
+      }
     </script>
   </body>
 </html>
