@@ -20,6 +20,7 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  cursor: none !important;
 }
 
 body {
@@ -111,6 +112,41 @@ body {
   background-color: var(--white-color);
 }
 
+.main {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+/* -------- Custom Cursor -------- */
+.cursor,
+.cursor2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor {
+  border: 1px solid var(--black-color);
+  transition: all 200ms ease-out;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  background-color: var(--black-color);
+  opacity: 0.3;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
 /* -------- To Top Button -------- */
 
 #scrollButton {
@@ -179,8 +215,6 @@ nav ul {
   opacity: 1;
 }
 
-/* inizio prova */
-
 .link-menu {
   opacity: 1;
   transition: opacity 0.3s ease;
@@ -189,16 +223,6 @@ nav ul {
 .link-menu.opacita025 {
   opacity: 0.25;
 }
-
-/* nav ul:hover a {
-  opacity: 0.25;
-}
-
-nav ul a:hover {
-  opacity: 1;
-} */
-
-/* fine prova */
 
 nav ul li {
   padding: 8px 18px;
@@ -1331,24 +1355,24 @@ footer {
     background: var(--white-color);
     transition: 0.2s;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-    transition: translate 0.375s cubic-bezier(0.175, 0.885, 0.32, 1);
+    /* transition: translate 0.375s cubic-bezier(0.175, 0.885, 0.32, 1); */
   }
 
-  @keyframes menu-in {
+  /* @keyframes menu-in {
     0% {
       clip-path: ellipse(60% 60% at 0% 50%);
     }
     100% {
       clip-path: ellipse(120% 120% at 0% 50%);
     }
-  }
+  } */
 
   #sidebar.active {
     left: -20px;
     border-left: 3px solid var(--primary-color);
-    visibility: visible;
+    /* visibility: visible;
     translate: 0;
-    animation: menu-in 0.375s;
+    animation: menu-in 0.375s; */
   }
 
   #sidebar ul {
@@ -1363,13 +1387,10 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* padding: 10px 40px; */
     padding: 7px 0;
   }
 
   #sidebar ul li a {
-    /* margin-bottom: 5px;
-    padding: 10px 15px; */
     width: 100%;
     height: 100%;
     border-radius: 5px;
