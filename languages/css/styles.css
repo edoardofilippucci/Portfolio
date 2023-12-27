@@ -176,7 +176,29 @@ header {
 
 nav ul {
   display: flex;
+  opacity: 1;
 }
+
+/* inizio prova */
+
+.link-menu {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.link-menu.opacita025 {
+  opacity: 0.25;
+}
+
+/* nav ul:hover a {
+  opacity: 0.25;
+}
+
+nav ul a:hover {
+  opacity: 1;
+} */
+
+/* fine prova */
 
 nav ul li {
   padding: 8px 18px;
