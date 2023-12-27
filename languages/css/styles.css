@@ -1309,11 +1309,24 @@ footer {
     background: var(--white-color);
     transition: 0.2s;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: translate 0.375s cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+
+  @keyframes menu-in {
+    0% {
+      clip-path: ellipse(60% 60% at 0% 50%);
+    }
+    100% {
+      clip-path: ellipse(120% 120% at 0% 50%);
+    }
   }
 
   #sidebar.active {
     left: -20px;
     border-left: 3px solid var(--primary-color);
+    visibility: visible;
+    translate: 0;
+    animation: menu-in 0.375s;
   }
 
   #sidebar ul {
