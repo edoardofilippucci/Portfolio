@@ -1293,6 +1293,14 @@ footer {
 /* -------------- MOBILE SIZE-------------- */
 
 @media only screen and (max-width: 1100px) {
+  .cursor {
+    display: none;
+  }
+
+  .cursor2 {
+    display: none;
+  }
+
   /* -------- Menù -------- */
 
   header {
