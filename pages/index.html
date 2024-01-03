@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Edoardo Filippucci" />
+    <title>LOCKED</title>
+    <link rel="stylesheet" href="./../languages/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <script src="./../languages/javascript/lock.js"></script>
+  </head>
+  <body id="lock-body">
+    <section id="lock-section">
+      <div class="lock-container">
+        <form
+          class="passform"
+          action="./../home.html"
+          onsubmit="return passcheck()"
+        >
+          Password: <input type="password" required id="pass1" />
+          <input type="submit" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
