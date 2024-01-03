@@ -197,6 +197,10 @@ body {
   transition: 0.2s ease;
 }
 
+#scrollButton i:hover {
+  cursor: pointer;
+}
+
 #scrollButton:hover i {
   color: var(--primary-color);
 }
@@ -564,6 +568,7 @@ section#clients {
 .swiper-custom-container .swiper-custom-text-container a:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .swiper-slide:hover {
@@ -723,7 +728,6 @@ section#services {
 }
 
 .service-elements:hover {
-  cursor: pointer;
   transform: scale(1.05);
 }
 
@@ -1012,6 +1016,10 @@ section#faq {
   color: var(--black-color);
 }
 
+.faq-question h3:hover {
+  cursor: pointer;
+}
+
 .faq-answer {
   max-height: 0;
   overflow: hidden;
@@ -1153,7 +1161,7 @@ textarea {
   border: 1px solid var(--primary-color);
 }
 
-.contact-form button {
+.contact-form .btn {
   font-size: 18px;
   color: var(--white-color);
   width: 100%;
@@ -1167,10 +1175,14 @@ textarea {
   transition: 0.2s ease;
 }
 
-.contact-form button:hover {
+.contact-form .btn:hover {
   cursor: pointer;
   transform: translateY(-5px);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn i:hover {
+  cursor: pointer;
 }
 
 /* -------- Footer Section -------- */
@@ -1281,6 +1293,10 @@ footer {
   text-decoration: none;
 }
 
+.footer-box-explain a:hover {
+  cursor: pointer;
+}
+
 .footer-box-explain p {
   color: var(--black-color);
   font-size: 17px;
@@ -1303,6 +1319,10 @@ footer {
 
 .footer-icon {
   font-size: 22px;
+}
+
+.footer-icon:hover {
+  cursor: pointer;
 }
 
 /* -------------- Lock Page-------------- */
