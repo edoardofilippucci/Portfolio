@@ -1,3 +1,14 @@
+/* 
+cose da sistemare:
+1) aggiungere unità base su tag html ed usare rem
+2) cambiare sezione servizi
+3) sistemare responsive
+4) cambiare sezione faq
+5) fare dropdown menu servizi
+6) sistemare home
+7) fare aniamzioni reveal con tempi diversi di ritardo
+*/
+
 /* -------------- GENERALE -------------- */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
@@ -20,7 +31,6 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  /* cursor: none !important; */
   cursor: auto;
 }
 
@@ -29,14 +39,13 @@ body {
 }
 
 :root {
-  --primary-color: #f99a49;
-  --white-color: #efeee5;
+  --primary-color: #ff4c4f;
+  --white-color: #f8f7f4;
   --black-color: #274546;
 }
 
 ::selection {
   background: transparent;
-  color: var(--primary-color);
 }
 
 ::-webkit-scrollbar {
@@ -63,69 +72,6 @@ body {
 .caps {
   text-transform: uppercase;
 }
-
-/* -------- Scroll Animation -------- */
-
-/* .animate-on-scroll {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-
-@keyframes fade {
-  from {
-    opacity: 1;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-.animate-on-scroll.show {
-  opacity: 1;
-  transform: translateY(0px);
-  animation: fade 1s ease;
-} */
-
-/* .hidden-left {
-  opacity: 0;
-  filter: blur(3px);
-  transform: translateX(-100%);
-  transition: all 1s ease;
-}
-
-.show-left {
-  opacity: 1;
-  filter: blur(0px);
-  transform: translateX(0);
-}
-
-.hidden-right {
-  opacity: 0;
-  filter: blur(3px);
-  transform: translateX(100%);
-  transition: all 1s ease;
-}
-
-.show-right {
-  opacity: 1;
-  filter: blur(0px);
-  transform: translateX(0);
-}
-
-.hidden-top {
-  opacity: 0;
-  filter: blur(3px);
-  transform: translateY(-100%);
-  transition: all 1s ease;
-}
-
-.show-top {
-  opacity: 1;
-  filter: blur(0px);
-  transform: translateY(0);
-} */
 
 /* -------------- LAPTOP SIZE-------------- */
 
@@ -1274,7 +1220,7 @@ footer {
 }
 
 .footer-text-box .footer-box-title h1 {
-  color: var(--black-color);
+  color: var(--white-color);
   font-size: 20px;
 }
 
